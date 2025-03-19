@@ -39,7 +39,7 @@ for _ in range(3):
     for intento in range(2):
         user_answer = input("Respuesta: ")
             #verifico si es un numero y por circuito corto, si no lo es pasa al else 
-        if user_answer.isdigit() and 1<= int(user_answer) <=len(questions)+1:
+        if user_answer.isdigit() and 1<= int(user_answer) <len(questions):
              user_answer=int(user_answer)-1
         else:
              print("Respuesta no válida")
