@@ -28,7 +28,7 @@ correct_answers_index = [1, 2, 0, 3, 1]
 points=0
 
 # Creación de una lista con 3 preguntas, respuestas asociadas y sus respuestas correctas para evitar el uso de indices
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 # El usuario deberá contestar 3 preguntas
 # Se usan tres variables para acceder a cada pregunta, respuesta y respuesta correcta
